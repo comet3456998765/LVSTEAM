@@ -1,1 +1,63 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/comet3456998765/YesLVS/main/Main'))()
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Tittle = Instance.new("TextLabel")
+local Infinite = Instance.new("TextButton")
+local FadedS = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0, 0, 0.538062274, 0)
+Frame.Size = UDim2.new(0, 454, 0, 267)
+Frame.ZIndex = 4
+
+Tittle.Name = "Tittle"
+Tittle.Parent = Frame
+Tittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tittle.Size = UDim2.new(0, 452, 0, 50)
+Tittle.Font = Enum.Font.SourceSansItalic
+Tittle.LineHeight = 2.000
+Tittle.Text = "Pencil Client [beta] by LVSTEAM"
+Tittle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tittle.TextScaled = true
+Tittle.TextSize = 14.000
+Tittle.TextWrapped = true
+
+Infinite.Name = "Infinite"
+Infinite.Parent = Frame
+Infinite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Infinite.Position = UDim2.new(0, 0, 0.187265918, 0)
+Infinite.Size = UDim2.new(0, 146, 0, 68)
+Infinite.Font = Enum.Font.SourceSansItalic
+Infinite.Text = "Infinite Y"
+Infinite.TextColor3 = Color3.fromRGB(0, 0, 0)
+Infinite.TextScaled = true
+Infinite.TextSize = 14.000
+Infinite.TextWrapped = true
+Infinite.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+end)
+
+FadedS.Name = "Faded S"
+FadedS.Parent = Frame
+FadedS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FadedS.Position = UDim2.new(0.638766527, 0, 0.187265918, 0)
+FadedS.Size = UDim2.new(0, 164, 0, 68)
+FadedS.Font = Enum.Font.SourceSansItalic
+FadedS.Text = "Faded"
+FadedS.TextColor3 = Color3.fromRGB(0, 0, 0)
+FadedS.TextScaled = true
+FadedS.TextSize = 14.000
+FadedS.TextWrapped = true
+FadedS.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
